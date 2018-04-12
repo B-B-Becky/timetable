@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timetable</title>
+	<style>
+		table {
+		    font-family: garamount,sans-serif;
+		    font-weight: bold;
+		    border-collapse: collapse;
+		    width: 100%;
+		}
+
+		td, th {
+		    border: 1px solid #dddddd;
+		    text-align: center;
+		    letter-spacing: 3px;
+		    padding: 18px;
+		    color: #fff;
+		}
+
+		#heading{
+			background-color: #ff1869;
+			color: #fff
+		}
+
+		#break{
+			font-weight: bolder;
+		}
+
+		#prac{
+			background-color: #f9c;
+		}
+
+		#math{
+			background-color: #c3f;
+		}
+
+		#coa{
+			background-color: #ff8080;
+		}
+
+		#db{
+			background-color: #baf;
+		}
+
+		#daa{
+			background-color: #123;
+		}
+
+		#os{
+			background-color: #c06;
+		}
+		ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		    background-color: #fff;
+		}
+
+		li {
+		    float: left;
+		}
+
+		li a, .dropbtn {
+		    display: inline-block;
+		    font-family: garamount,sans-serif;
+		    color: #ff1869;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		}
+
+		li a:hover, .dropdown:hover .dropbtn {
+		    background-color: black;
+		}
+
+		li.dropdown {
+		    display: inline-block;
+		}
+
+		.dropdown-content {
+		    display: none;
+		    position: absolute;
+		    background-color: #f9f9f9;
+		    min-width: 160px;
+		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		    z-index: 1;
+		}
+
+		.dropdown-content a {
+		    color: black;
+		    padding: 12px 16px;
+		    text-decoration: none;
+		    display: block;
+		    text-align: left;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+		.dropdown:hover .dropdown-content {
+		    display: block;
+		}
+	</style>
+</head>
+<body background="bg1.jpeg" style="background-repeat: no-repeat;background-size: 100%">
+	
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="timetable.html">Timetable</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Syllabus</a>
+    <div class="dropdown-content">
+      <a href="daa.html">DAA Theory</a>
+      <a href="daa_lab.html">DAA Lab</a>
+      <a href="coa.html">COA Theory</a>
+      <a href="coa_lab.html">COA Lab</a>
+      <a href="os.html">OS Theory</a>
+      <a href="os_lab.html">OS Lab</a>
+      <a href="dbms.html">DBMS Theory</a>
+      <a href="dbms_lab.html">DBMS Lab</a>
+      <a href="maths.html">Maths Theory</a>
+      <a href="wt_lab.html">WT Lab</a>
+    </div>
+  </li>
+  <li><a style="margin-left: 940px" href="http://www.spit.ac.in/">About</a></li>
+</ul>	
+	<table>
+		<tr id="heading">
+			<th>TIME</th>
+			<th>MONDAY</th>
+			<th>TUESDAY</th>
+			<th>WEDNESDAY</th>
+			<th>THURSDAY</th>
+			<th>FRIDAY</th>
+		</tr>
+		<tr>
+			<td>08:00 - 09:00</td>
+			<td></td>
+			<td></td>
+			<td style="background-color: #669">Yog Vidya</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>09:00 - 10:00</td>
+			<td rowspan="2" id="prac"><a href="dbms_lab.html" style="text-decoration: none;color: white;">DBMS</a></td>
+			<td rowspan="2" id="prac"><a href="os_lab.html" style="text-decoration: none;color: white;">OS</td>
+			<td id="coa"><a href="coa.html" style="text-decoration: none;color: white;">COA</a></td>
+			<td id="os"><a href="os.html" style="text-decoration: none;color: white;">OS</a></td>
+			<td id="db"><a href="dbms.html" style="text-decoration: none;color: white;">DBMS</a></td>
+		</tr>
+		<tr>
+			<td>10:00 - 11:00</td>
+			<td id="os"><a href="os.html" style="text-decoration: none;color: white;">OS</a></td>
+			<td id="daa"><a href="daa.html" style="text-decoration: none;color: white;">DAA</a></td>
+			<td id="math"><a href="maths.html" style="text-decoration: none;color: white;">Maths</a></td>
+		</tr>
+		<tr>
+			<td>11:00 - 11:15</td>
+			<td colspan="5" id="break"><center>SHORT BREAK</center></td>
+		</tr>
+		<tr>
+			<td>11:15 - 12:15</td>
+			<td id="db"><a href="dbms.html" style="text-decoration: none;color: white;">DBMS</a></td>
+			<td id="math"><a href="maths.html" style="text-decoration: none;color: white;">Maths</a></td>
+			<td  id="os"><a href="os.html" style="text-decoration: none;color: white;">OS</a></td>
+			<td rowspan="2" id="prac"><a href="wt_lab.html" style="text-decoration: none;color: white;">WEB</a></td>
+			<td rowspan="2" id="prac"><a href="coa_lab.html" style="text-decoration: none;color: white;">COA</a></td>
+		</tr>
+		<tr>
+			<td>12:15 - 01:15</td>
+			<td id="math"><a href="maths.html" style="text-decoration: none;color: white;">Maths</a></td>
+			<td id="coa"><a href="coa.html" style="text-decoration: none;color: white;">COA</a></td>
+			<td id="coa"><a href="coa.html" style="text-decoration: none;color: white;">COA</a></td>
+		</tr>
+		<tr>
+			<td>01:15 - 02:00</td>
+			<td colspan="5" id="break"><center>LONG BREAK</center></td>
+		</tr>
+		<tr>
+			<td>02:00 - 03:00</td>
+			<td  id="daa"><a href="daa.html" style="text-decoration: none;color: white;">DAA</a></td>
+			<td id="daa"><a href="daa.html" style="text-decoration: none;color: white;">DAA</a></td>
+			<td></td>
+			<td id="db"><a href="dbms.html" style="text-decoration: none;color: white;">DBMS</a></td>
+			<td rowspan="2" id="prac"><a href="daa_lab.html" style="text-decoration: none;color: white;">DAA</a></td>
+		</tr>
+		<tr>
+			<td>03:00 - 04:00</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td id="math"><a href="maths.html" style="text-decoration: none;color: white;">Maths</a></td>
+		</tr>
+	</table>
+</body>
+</html>
